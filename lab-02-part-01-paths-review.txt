@@ -104,28 +104,28 @@ e. Determine which folder in my-stuff was created most recently by using ls.  (t
 f. Remove that folder.
 g. Show all of the commands that you used to complete the above exercise.  (for example, how did you determine which folder in my-stuff was the most recent?).  Use the command: history ... to help you remember what you did!  Paste the commands below.
 ----------
-  313  clear
-  314  pwd
-  315  cd Desktop
-  316  pwd
-  317  mkdir -p my-stuff/archived
-  318  pwd
-  319  ls
-  320  mkdir my-stuff/current
-  321  pwd
-  322  cd my-stuff
-  323  pwd
-  324  ls
-  325  hostname
-  326  pwd
-  327  cd ..
-  328  mkdir my-stuff/local
-  329  pwd
-  330  cd my-stuff
-  331  pwd
-  332  ls
-  333  ls -t
-  334  rmdir local
-  335  pwd
-  336  ls
-  337  history
+  clear
+  pwd
+  cd Desktop
+  pwd
+  mkdir -p my-stuff/archived
+  pwd
+  ls
+  mkdir my-stuff/current
+  pwd
+  cd my-stuff
+  pwd
+  ls
+  hostname
+  pwd
+  cd ..
+  mkdir my-stuff/local
+  pwd
+  cd my-stuff
+  pwd
+  ls
+  ls -t
+  rmdir local
+  pwd
+  ls
+  history
