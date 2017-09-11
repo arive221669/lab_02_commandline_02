@@ -112,7 +112,10 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-
+curl -o google.html www.google.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11212    0 11212    0     0   100k      0 --:--:-- --:--:-- --:--:--  102k
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
@@ -120,7 +123,8 @@ Write the command you used below.  Also copy and paste the output below.
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
 
-
+pwd
+/Users/student/Desktop
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
@@ -128,7 +132,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -144,7 +148,10 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 
-
+curl -o mtec1003-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0  1141k      0 --:--:-- --:--:-- --:--:-- 2298k
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -152,6 +159,7 @@ Write down the command that you used to download the file below.  Additionally, 
 Write down the command that you used to uncompress the file.
 ----------
 
+unzip mtec1003-lab-02.zip
 
 
 ==========
@@ -160,6 +168,7 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
+books	logs	web
 
 
 ==========
@@ -171,6 +180,16 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 Copy and paste the output below.
 ----------
 
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1003-lab-02.zip
+Downloads		__MACOSX		pymel.log
+Library			drills (2).py		python drills.py
+MPLABXProjects		drills.py		stuff
+Movies			google.html		xgen
+Music			google.html.txt
 
 
 ==========
@@ -183,7 +202,7 @@ List the files in the directory you're currently in (which should be stuff).
 Copy and paste the output below.
 ----------
 
-
+hello.txt
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -194,7 +213,16 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1003-lab-02.zip
+Downloads		__MACOSX		pymel.log
+Library			drills (2).py		python drills.py
+MPLABXProjects		drills.py		stuff
+Movies			google.html		stuff.tar
+Music			google.html.txt		xgen
 
 
 ==========
@@ -205,7 +233,7 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
+tar: Failed to open 'stuff.tar'
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
@@ -213,7 +241,16 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
-
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1003-lab-02.zip
+Downloads		__MACOSX		pymel.log
+Library			drills (2).py		python drills.py
+MPLABXProjects		drills.py		stuff
+Movies			google.html		stuff.tar
+Music			google.html.txt		xgen
 
 ==========
 21. Now compress it!  Type:
@@ -222,7 +259,16 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1003-lab-02.zip
+Downloads		__MACOSX		pymel.log
+Library			drills (2).py		python drills.py
+MPLABXProjects		drills.py		stuff
+Movies			google.html		stuff.tar.gz
+Music			google.html.txt		xgen
 
 
 ==========
@@ -236,7 +282,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -246,7 +292,7 @@ $ tar -xvf stuff.tar.gz
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
 
-
+books		logs		stuff		stuff.tar.gz	web
 
 ==========
 24. Go back to your home directory
